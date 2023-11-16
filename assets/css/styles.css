@@ -93,25 +93,7 @@ ul.dropdown-menu li {
       .navbar-toggler {
             display: flex;            
             align-items: center;
-      }
-      .menu-icon {
-            cursor: pointer;
-      }
-      .menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #f1f1f1;
-            padding: 10px;
-            list-style: none;
-      }
-      .menu li {
-            margin-bottom: 10px;
-      }
-      #menu-btn:checked ~ .menu {
-            display: block;
-      }
+      }     
       #botonModo{
             align-items: end;
       }      
