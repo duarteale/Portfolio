@@ -14,12 +14,12 @@ header {
       color: white; /*------ Color de texto del header*/
 } 
 span{
-      margin-left: 10px;
+      margin-left: 10px; /*------ Margen izquierdo de 10px al span*/
 }
 h1{
       font-size: 55px; /*------ Tamaño del texto del título*/
-      animation: miAnimacion 1s ease infinite;
-      margin: 5px;
+      animation: miAnimacion 1s ease infinite; 
+      margin: 5px;  /*------ Todos los margenes del titulo son de 5px*/
 }
 h2{
       font-size: 35px; /*------ Tamaño del texto del título*/
@@ -31,8 +31,8 @@ h3{
       font-size: 25px; /*------ Tamaño del texto del título*/
       text-align: center; /*------ Texto alineado al medio/centro*/
       color: whitesmoke; /*------ Color de texto del titulo h3*/
-      padding: 15px; /*------ Relleno del titulo de 15px*/
-      margin: 5px;
+      padding: 5px; /*------ Relleno del titulo de 15px*/
+      margin: 5px;  /*------ Color de fondo del footer*/
       line-height: normal;  /*------ Interlineado de titulo*/
 }
 h5{
@@ -48,7 +48,7 @@ label{font-size: 12px ;
       color: whitesmoke; /*------ Color de texto de todos los labels del body*/
 }
 form{
-      margin-bottom: 40px;
+      margin-bottom: 20px;  /*------ Margen inferior del formulario de contacto*/
 }
 /*-------------- Configuro algunos id --------------*/
 #logo {
@@ -77,17 +77,18 @@ ul.dropdown-menu li {
 }
 
 /*-------------- Configuro los media queries para hacer el sitio responsive --------------*/
+/* Estilos para pantallas con ancho máximo de 768px */
 @media screen and (max-width: 768px) {
       .navbar-brand {
-            margin-right: auto; /* Mueve el logo hacia la izquierda */            
+            margin-right: auto; /*------ Mueve el logo hacia la izquierda */            
       }
       .menu-toggle {
-            position: relative;
+            position: relative; 
       }
       .navbar .container-fluid {            
             display: flex;
-            flex-wrap: nowrap;
-            align-items: center; /* Alinea los elementos verticalmente */
+            flex-wrap: nowrap;  /*------ Hace que el flex se mantenga en una sola fila*/
+            align-items: center; /*------ Alinea los elementos verticalmente */
       }
       .navbar-brand,
       .navbar-toggler {
@@ -95,28 +96,28 @@ ul.dropdown-menu li {
             align-items: center;
       }     
       #botonModo{
-            align-items: end;
+            align-items: end;  /*------ Alinea el boton de Modo Oscuro al final de la fila*/
       }      
       #menuNav{
-            flex: 10;
+            flex: 10;  /*------ Configura el flex ocupando 10 partes de pantalla del total de 12.*/
       }     
       #menuModo{
-            flex: 2;
+            flex: 2;  /*------ Configura el flex ocupando 2 partes de pantalla del total de 12.*/
       }
       #presentacion{
-            height: 350px;
+            height: 350px;  /*------ Hace el relleno de la presentacion más alto*/
       }
       h1{
-            font-size: 35px;
+            font-size: 35px;  /*------ Tamaño de texto del titulo*/
       }
       h2{
-            font-size: 30px;
+            font-size: 30px;  /*------ Tamaño de texto del titulo*/
       }
       h3{
-            font-size: 25px;
+            font-size: 25px;  /*------ Tamaño de texto del titulo*/
       }
       h4{
-            font-size: 20px;
+            font-size: 20px;  /*------ Tamaño de texto del titulo*/
       }
       .tarjetas {
             flex-direction: column; 
@@ -130,22 +131,23 @@ ul.dropdown-menu li {
             display: none;  /*------ En la querie de celulares, la imagen no se muestra. Solamente se muestra en pantallas pasando los 768px*/
       }
       #redeSociales{
-            margin-bottom: 15px;
+            margin-bottom: 15px;  /*------ Margen inferior de 15 px para el ID de redes sociales del footer*/
       }
       footer p{
-            margin-bottom: 10px;
+            margin-bottom: 10px;  /*------ Margen inferior de 15 px para los parrafos del footer*/
       }
 }
+/* Estilos para pantallas con ancho mínimo de 768px, al girar el celular se ven las imágenes de las tarjetas */
 @media screen and (min-width: 768px) {      
       .card {
             display: flex;  /*------ Display flexible en la tarjeta*/
-            justify-content: space-between; 
+            justify-content: space-between;  /*------ Agrega espacios*/
             align-items: center;  //*------ Alinea los elementos a lo largo del eje transversal a las tarjetas dentro de la media querie de escritorio*/
             padding: 20px; /*------Relleno de la tarjeta de 20px*/
       }
       .card .content {
             flex: 1;  /*------ Aplica flex-grow: 1, flex-shrink: 1, flex-basis: 0%; */
-            text-align: left;
+            text-align: left;  /*------ Texto de la tarjeta alineado a la izquierda*/
       }
       .card .content h2,
       .card .content p {
@@ -153,47 +155,40 @@ ul.dropdown-menu li {
       }
       .card img {
             display: flex; /*------ Display flexible en la imagen de la tarjeta*/
-            flex-wrap: wrap;
-            justify-content: center;
-            border-radius: 10px;
+            flex-wrap: wrap;  /*------ Mantiene todo en la misma fila*/
+            justify-content: center;  /*------ Ajusta el contenido al centro/medio*/
+            border-radius: 10px;  /*------ Borde redondeado a la imagen de 10px*/
       }
 }
 /*-------------- Animación de "Hola"--------------*/
 @keyframes miAnimacion {
       0%{ transform: scale(1);} /*------ Establece el elemento en su estado inicial, con un tamaño de escala normal */
-      50%{ transform: scale(1.2);} /*------ */
-      100%{ transform: scale(1);} /*------ */
+      50%{ transform: scale(1.2);} /*------ La escala se agranda al 50% de la transicion*/
+      100%{ transform: scale(1);} /*------ La escala vuelve a su tamaño al 100% de la transicion*/
 }
 /*-------------- Configuracion de las cards/tarjetas --------------*/
 .tarjetas{
       display: flex; /*------ Display flexible*/
 }
 .card{
-      background-color:rgba(124, 124, 124, 0.4);
-      color: rgb(58, 7, 109);
+      background-color:rgba(124, 124, 124, 0.4); /*------ Color de fondo de la tarjeta*/
+      color: rgb(58, 7, 109);  /*------Color del texto de la tarjeta*/
       padding: 30px; /*------ Relleno de la tarjeta de 30px*/
       flex: 50%;
       flex-direction: column;
       text-align: center; /*------ Texto alineado al medio/centro en las cards*/
       align-items: center; /*------- Alinea los elementos  a lo largo del eje transversal */
-      margin: 20px;
-      border: 3px solid whitesmoke;
-      border-radius: 20px;
+      margin: 20px;  /*------ Todos los margenes de la tarjeta son de 20px*/
+      border: 3px solid whitesmoke;  /*------ Agrega un borde de color solido de 3px*/
+      border-radius: 20px;  /*------ Borde redondeado de 20px a la tarjeta*/
       display: flex; /*------ Display flexible en la tarjeta*/      
       overflow: hidden;
       line-height: 20px; /*------ Interlineado del texto de las tarjetas*/
-}
-.card .footer{
-      background-color:rgba(124, 124, 124, 0.4);
-      padding: 10px;  /*------ Relleno del footer de la tarjeta de 10px*/
-      text-align: center; /*------ Texto alineado al medio/centro*/
-      border-radius: 10px;
 }
 .particulares{
       text-align: center; /*------ Texto alineado al medio/centro en el sector particulares*/
       color: rgb(42, 3, 73);
 }
-
 
 /*---------------- Configuracion de imagenes----------------*/
 .imagen-container {      
@@ -214,20 +209,19 @@ ul.dropdown-menu li {
 /*---------------- Configuracion de contacto ----------------*/
 .contacto{
       margin: 20px;
-      border: 3px solid #000000;
-      border-radius: 20px;
+      border: 3px solid #000000;  /*------ Borde solido de color negro de 3px*/
+      border-radius: 20px; /*------ Borde redondeado de 20px de contacto*/
       padding: 20px;  /*------ Relleno de 20px a la clase contacto*/
 }
 #contacto{
       line-height: 2.5;
       text-align: center;       /*------ Texto alineado al medio/centro en el sector contacto*/
-      border-color: black;
-      color: whitesmoke;
+      color: whitesmoke; /*------ Color de texto del sector contacto*/
 }
 i{
-      list-style: none;
-      font-size: 30px;
-      margin-right: 10px;
+      list-style: none;  /*------ Saca los puntitos a las listas*/
+      font-size: 30px;  /*------ Tamaño de los iconos*/
+      margin-right: 10px;  /*------ Margen derecho del icono de 10px*/
       margin-top: 10px; /*------ Margen superior del icono con los demas elementos */
 }
 .map{
@@ -241,8 +235,8 @@ i{
 footer{
       text-align: center; /*------ Alinea el texto del footer al medio*/
       margin-top: 10px; /*------ Margen superior del footer con demas elementos*/
-      background-color:#333;
-      color: rgb(212, 154, 233);
+      background-color:#333;  /*------ Color de fondo del footer*/
+      color: rgb(212, 154, 233); /*------ Color del texto del footer*/
       padding: 10px;  /*------ Relleno del footer de 10px*/
 }
 footer p{
