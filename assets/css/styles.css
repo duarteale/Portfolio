@@ -1,102 +1,109 @@
 body, html{
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background:linear-gradient(30deg, crimson, rgb(7, 22, 69), indianred, purple);
-      box-sizing: border-box;     
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /*------ Configuro para todo el body el estilo/familia de fuente*/
+      background:linear-gradient(30deg, crimson, rgb(7, 22, 69), indianred, purple); /*------ Color en degrade del fondo de todo el body*/
+      box-sizing: border-box; /*------ Aplico a todo el body el ancho y el alto, el relleno y los bordes. */
 }
 /*--------------Configuracion del modo oscuro --------------*/
 body.modo-oscuro {
-      background: #333;  
-      color: #fff; 
+      background: #333;  /*------ Color de fondo al que se va a convertir al hacer clic en modo oscuro*/
+      color: #fff;  /*------ Color de texto de todo el body en modo oscuro*/
 }
 /*-------------- Etiquetas de html */
 header {      
-      align-items: center;
-      color: white;
+      align-items: center; /* Alinea los elementos  a lo largo del eje transversal dentro del header */
+      color: white; /*------ Color de texto del header*/
 } 
 span{
       margin-left: 10px;
 }
 h1{
-      font-size: 55px ;
+      font-size: 55px; /*------ Tamaño del texto del título*/
       animation: miAnimacion 1s ease infinite;
       margin: 5px;
 }
 h2{
-      font-size: 35px ;
-      text-align: center;
+      font-size: 35px; /*------ Tamaño del texto del título*/
+      text-align: center; /*------ Texto alineado al medio/centro*/
       margin: 5px;
 }
 h3{
-      font-size: 25px ;
-      text-align: center;
-      color: whitesmoke;
-      padding: 15px;      
+      font-size: 25px; /*------ Tamaño del texto del título*/
+      text-align: center; /*------ Texto alineado al medio/centro*/
+      color: whitesmoke; /*------ Color de texto del titulo h3*/
+      padding: 15px; /*------ Relleno del titulo de 15px*/
       margin: 5px;
+}
+h5{
+      font-size: 22px; /*------ Tamaño del texto del título*/
+      text-align: center; /*------ Texto alineado al medio/centro*/
 }
 p{
       font-size: 14px ;
-      color: rgb(212, 154, 233);
+      color: rgb(212, 154, 233); /*------ Color de texto de todos los parrafos del body*/
 }
 label{font-size: 12px ;
-      color: whitesmoke;
+      color: whitesmoke; /*------ Color de texto de todos los labels del body*/
+}
+form{
+      margin-bottom: 40px;
 }
 /*-------------- Configuro algunos id --------------*/
 #logo {
-      display: flex;
-      align-items: center;
-      padding: 0%;
-      margin: 0%;
-      border-radius: 40px;
+      display: flex;  /*------ Display flexible al logo del nav*/
+      align-items: center; /*------ Alinea los elementos  a lo largo del eje transversal en el id logo */
+      padding: 0%; /*------ Relleno al 0%*/
+      margin: 0%;  /*------ Todos los margenes al 0%*/
+      border-radius: 40px; /*------ Borde redondeado de 40px para que tome forma de circulo el logo del nav.*/
 }
 .btn-primary{
-      background-color: rgb(32, 2, 97);
+      background-color: rgb(32, 2, 97);  /*------ Color de fondo del boton primary en todo el sitio.*/
 }
 ul.dropdown-menu li {
-      margin-left: 10px;
+      margin-left: 10px;  /*------ Margen izquierdo en las listas desordenadas del nav*/
 }
 #presentacion{
       background-color:rgba(49, 48, 48, 0.4);
-      text-align: center;
-      padding-left: 20px;
-      padding-top: 100px;
-      height: 300px;
-      color: whitesmoke;
+      text-align: center; /*------ Texto alineado al medio/centro en el sector presentacion*/
+      padding-left: 20px;  /*------ Relleno izquierdo del sector presentacion de 20px*/
+      padding-top: 100px; /*------ Relleno superior del sector presentacion 100px*/
+      height: 300px; /*------ Altura de la presentacion de 300px*/
+      color: whitesmoke;  /*------ Color de texto de la presentacion*/
 }
 #servicios{   
-      color: rgb(245, 245, 245);      
+      color: rgb(245, 245, 245); /*------ Color de texto del sector servicios*/
 }
 
 /*-------------- Configuro los media queries para hacer el sitio responsive --------------*/
 @media screen and (max-width: 768px) {
       .tarjetas {
             flex-direction: column; 
-            align-items: center; 
+            align-items: center;  /*------ Alinea los elementos a lo largo del eje transversal a las tarjetas dentro de la media querie de celulares*/
       }    
       .card {
-            width: 80%; 
-            margin: 20px auto;
+            width: 80%;  /*------ Tamaño de altura de la tarjeta en querie de celulares*/
+            margin: 20px auto; /*------ Margenes automaticos de 20px de la tarjeta en querie de celulares*/
       }
       .card img {
-            display: none;
+            display: none;  /*------ En la querie de celulares, la imagen no se muestra. Solamente se muestra en pantallas pasando los 768px*/
       }
 }
 @media screen and (min-width: 768px) {
       .card {
-            display: flex; 
+            display: flex;  /*------ Display flexible en la tarjeta*/
             justify-content: space-between; 
-            align-items: center;
-            padding: 20px;
+            align-items: center;  //*------ Alinea los elementos a lo largo del eje transversal a las tarjetas dentro de la media querie de escritorio*/
+            padding: 20px; /*------Relleno de la tarjeta de 20px*/
       }
       .card .content {
-            flex: 1; 
+            flex: 1;  /*------ Aplica flex-grow: 1, flex-shrink: 1, flex-basis: 0%; */
             text-align: left;
       }
       .card .content h2,
       .card .content p {
-            margin-bottom: 5px; 
+            margin-bottom: 5px; /*------ Aplica un margen inferior entre los titulos hs y los parrafos con otros elementos*/
       }
       .card img {
-            display: flex;
+            display: flex; /*------ Display flexible en la imagen de la tarjeta*/
             flex-wrap: wrap;
             justify-content: center;
             border-radius: 10px;
@@ -104,37 +111,37 @@ ul.dropdown-menu li {
 }
 /*-------------- Animación de "Hola"--------------*/
 @keyframes miAnimacion {
-      0%{ transform: scale(1);}
-      50%{ transform: scale(1.2);}
-      100%{ transform: scale(1);}
+      0%{ transform: scale(1);} /*------ Establece el elemento en su estado inicial, con un tamaño de escala normal */
+      50%{ transform: scale(1.2);} /*------ */
+      100%{ transform: scale(1);} /*------ */
 }
 /*-------------- Configuracion de las cards/tarjetas --------------*/
 .tarjetas{
-      display: flex;
+      display: flex; /*------ Display flexible*/
 }
 .card{
       background-color:rgba(124, 124, 124, 0.4);
       color: rgb(58, 7, 109);
-      padding: 30px;
+      padding: 30px; /*------ Relleno de la tarjeta de 30px*/
       flex: 50%;
       flex-direction: column;
-      text-align: center;
-      align-items: center;
+      text-align: center; /*------ Texto alineado al medio/centro en las cards*/
+      align-items: center; /*------- Alinea los elementos  a lo largo del eje transversal */
       margin: 20px;
       border: 3px solid whitesmoke;
       border-radius: 20px;
-      display: flex;
-      flex-direction: column;
+      display: flex; /*------ Display flexible en la tarjeta*/      
       overflow: hidden;
+      line-height: 20px; /*------ Interlineado del texto de las tarjetas*/
 }
 .card .footer{
       background-color:rgba(124, 124, 124, 0.4);
-      padding: 10px;
-      text-align: center;
+      padding: 10px;  /*------ Relleno del footer de la tarjeta de 10px*/
+      text-align: center; /*------ Texto alineado al medio/centro*/
       border-radius: 10px;
 }
 .particulares{
-      text-align: center;
+      text-align: center; /*------ Texto alineado al medio/centro en el sector particulares*/
       color: rgb(42, 3, 73);
 }
 
@@ -160,30 +167,36 @@ ul.dropdown-menu li {
       margin: 20px;
       border: 3px solid #000000;
       border-radius: 20px;
-      padding: 20px;
+      padding: 20px;  /*------ Relleno de 20px a la clase contacto*/
 }
 #contacto{
       line-height: 2.5;
-      text-align: center;      
+      text-align: center;       /*------ Texto alineado al medio/centro en el sector contacto*/
       border-color: black;
       color: whitesmoke;
 }
 i{
+      list-style: none;
       font-size: 30px;
       margin-right: 10px;
-      margin-top: 10px;
+      margin-top: 10px; /*------ Margen superior del icono con los demas elementos */
 }
 .map{
-      margin-top: 40px;
+      margin-top: 40px; /*------ Margen superior del mapa con los demas datos de contacto*/
+      position: relative;/*------ Posicion relativa del elemento mapa*/
+      width: 100%; /*------ El ancho del mapa al 100%*/
+      height: 400px; /*------ Altura inicial del contenedor del mapa, ajusta según necesites */
+      overflow: hidden; /*------ Para evitar que el mapa se desborde fuera del contenedor */
 }
 /*---------------- Configuracion de footer ----------------*/
 footer{
-      text-align: center;
-      margin-top: 10px;
+      text-align: center; /*------ Alinea el texto del footer al medio*/
+      margin-top: 10px; /*------ Margen superior del footer con demas elementos*/
       background-color:#333;
       color: rgb(212, 154, 233);
-      padding: 10px;
+      padding: 10px;  /*------ Relleno del footer de 10px*/
 }
-ul{
-      list-style-type: none;
+footer p{
+      line-height: normal; /*------ Interlineado entre parrafos del footer*/
+      text-align: center; /*------ Alinea los parrafos del footer al medio*/
 }

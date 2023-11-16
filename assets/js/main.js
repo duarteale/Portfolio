@@ -10,14 +10,9 @@ function cambiarModo() {
       body.classList.toggle("modo-oscuro"); //----------------- Agrega o quita la clase "modo-oscuro" al body y se configura (aparte) en el archivo styles.css
       actualizarTextoBoton(); //----------------------------- Llama a la función para actualizar el texto del botón
 }
-// Creo un botón y agrego un "escuchador de eventos" para darle comportamiento al clic
-const botonModo = document.createElement("button");
-botonModo.innerText = "Cambiar Modo";
-botonModo.addEventListener("click", cambiarModo);
-
-// Busco el header y agrego el botón creado
-const header = document.querySelector('header');
-header.appendChild(botonModo);
+// Busco el botón y agrego un "escuchador de eventos" para darle comportamiento al clic
+const botonModoNavbar = document.getElementById('botonModo');
+botonModoNavbar.addEventListener("click", cambiarModo);
 
 //Funcion que cambia el texto del boton
 function actualizarTextoBoton() {
@@ -28,7 +23,6 @@ function actualizarTextoBoton() {
       }
 }
 // Configuro estilos para el botón
-botonModo.style.position = 'fixed'; 
 botonModo.style.top = '55px'; 
 botonModo.style.right = '20px'; 
 botonModo.style.zIndex = '1000'; 

@@ -25,10 +25,10 @@ Este proyecto es un portfolio personal desarrollado por Alejandra Duarte. Tiene 
 
 ## Funcionalidades
 
-- **Sección "Soy yo"**: Describe quién es Alejandra Duarte.
+- **Sección "Soy Ale"**: Describe quién es Alejandra Duarte.
 - **Sección "Servicios"**: Muestra los servicios ofrecidos con un dropdown.
-- **Sección "Servicios" en el main del index**: Muestra resúmenes de los servicios ofrecidos.
 - **Sección "Contacto"**: Proporciona datos de contacto y un formulario.
+- **Sección "Main"**: Muestra en tarjetas resúmenes de los servicios ofrecidos.
 - **Footer**: Contiene accesos rápidos y enlaces a las redes sociales de Alejandra.
 
 ## Capturas de Pantalla
@@ -41,6 +41,7 @@ Inserta aquí capturas de pantalla significativas de tu proyecto.
 2. Abre el archivo `index.html` en tu navegador web.
 
 ## Tecnologías Utilizadas
+Cada código está totalmente comentado
 
 - HTML
 - CSS
