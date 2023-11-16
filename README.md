@@ -3,8 +3,6 @@
 Este es el repositorio de mi proyecto de Portfolio, diseñado para mostrar mis servicios y habilidades en asistencia virtual, clases de computación y diseño web, realizado en el curso de BA Multiplica 2.0 desde el 12 de Septiembre 2023 al 23 de Noviembre 2023.
 [Prototipo inicial en FIGMA]( https://www.figma.com/file/nCAVYwuiSiMVAIy7Hc6UCp/Mi-primer-sitio-BAM?type=design&node-id=0%3A1&mode=design&t=epfeVNY9xUptP7RV-1)
 
-
-
 ## Contenido
 
 - [Estructura del Proyecto](#estructura-del-proyecto)
@@ -52,7 +50,7 @@ Cada código está totalmente comentado
 
 ## Autora
 
-Alejandra Duarte (GitHub: [duarteale](https://github.com/duarteale))
+Alejandra M. E. Duarte (GitHub: [duarteale](https://github.com/duarteale))
 
 ## Documentación
 
@@ -68,7 +66,3 @@ Para cualquier consulta o colaboración, puedes contactar a Alejandra Duarte a t
 - LinkedIn: [Alejandra Duarte en LinkedIn](https://www.linkedin.com/in/duarteale)
 - Instagram: [@almavirtualbolivar](https://www.instagram.com/almavirtualbolivar)
 - GitHub: [duarteale en GitHub](https://github.com/duarteale)
-
-
-Probando imagenes
-<img src="./assets/img/logo.png" alt="Logo de Alma Virtual" width="50" height="50">
