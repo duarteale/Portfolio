@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Incluyendo hojas de estilo y scripts externos -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <!-- <link rel="stylesheet" href="/assets/css/reset.css"> -->
+      <link rel="stylesheet" href="/assets/css/styles.css">
+      <link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+      <title>Alma Virtual</title>
+</head>
+
+<body>
+      <header>
+            <!-- En esta sección se encuentra el navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+                  <!-- Parte izquierda del navbar -->
+                  <div class="container-fluid col-5">
+                        <a id="logo" class="navbar-brand" href="index.html">
+                              <!-- Logo -->
+                              <img id="logo" src="/assets/img/logo.png" alt="Logo" width="40" height="40"
+                                    class="d-inline-block align-text-top">
+                              <span>AlmaVirtual</span>
+                        </a>
+                        <!-- Botón del navbar para móviles -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
+                  </div>
+                  <!-- Parte derecha del navbar -->
+                  <div class="container-fluid col-7">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <!-- Opciones de navegación -->
+                                    <li class="nav-item">
+                                          <a class="nav-link active " aria-current="page" href="#presentacion">Soy
+                                                Ale</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                          <!-- Menú desplegable de servicios -->
+                                          <a class="nav-link dropdown-toggle" href="#servicios" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Servicios
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                                <!-- Lista de servicios -->
+                                                <li><a class="dropdown-item"
+                                                      href="#">Asistencia Virtual</a>
+                                                </li>  
+                                                <li>
+                                                      <hr class="dropdown-divider">
+                                                </li>
+                                                <!-- Tipos de clases particulares -->                                                
+                                                <li><a class="dropdown-item"
+                                                            href="clasesParticulares.html#adultos">Clases Particulares</a>
+                                                </li>                                                
+                                                <li>
+                                                      <hr class="dropdown-divider">
+                                                </li>
+                                                <li>Diseño Web</li>
+                                          </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                          <a class="nav-link" href="#contacto">Contacto</a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+            </nav>
+      </header>
+
+      <main>
+            <div id="presentacion">
+                  <div class="element">
+                        <h1>Hola!</h1>
+                  </div>
+                  <h2>Soy Ale Duarte</h2>
+                  <h3>Analista de Sistemas y estudiante de Desarrollo de Software</h3>
+            </div>
+
+            <h3>Servicios</h3>
+            <!-- En esta sección "Servicios" es donde creo 3 cards con los servicios que ofrezco para luego redirigir cada uno a su pagina correspondiente -->
+            <div id="servicios" class="tarjetas">
+                  <!-- Tarjeta de Asistencia Virtual -->
+                  <div class="card">
+                        <!-- Acá se insertan la imagen de la card-->
+                        <div class="imagen-container">
+                              <a href="https://alma-virtual.negocio.site">
+                                    <img class="imagenes" src="/assets/img/asistencia.jpg" alt="">  
+                              </a>
+                        </div>
+                        <div class="content">
+                              <h2>Asistencia Virtual</h2>
+                              <!-- Detalles del servicio de Asistencia Virtual -->
+                              <p>La asistencia virtual consiste en administrar de forma remota las necesidades del
+                                    cliente:</p>
+                              <p>Administración de email. Administración de agenda. Control de turnos y reservas.
+                                    Organización de reuniones. Pagos de servicios y Trámites online</p>
+                              <p></p>
+                              <p>También realizo documentaciones:</p>
+                              <p>Transcripciones. Traducciones (inglés). Redacciones. Correcciones. Presentaciones.
+                                    Hojas de cálculo. Documentos.</p>
+                              <p>Y por último: Escaneos. Impresiones. Fotocopias.</p>
+                              <a href="https://wa.me/5492314442576" target="_blank">
+                                    <button class="btn btn-light">Contactar por WhatsApp</button>
+                              </a>
+                        </div>
+                  </div>
+                  <!-- Tarjeta de Clases Particulares de Computación -->
+                  <div class="card">
+                        <!-- Acá se insertan la imagen de la card-->
+                        <div class="imagen-container">
+                              <a href="/clasesParticulares.html">
+                                    <img class="imagenes" src="/assets/img/clases.jpg" alt="">
+                              </a>
+                        </div>
+                        <div class="content">
+                              <h2>Clases Particulares de Computación</h2>
+                              <!-- Detalles de las clases particulares -->
+                              <p>Las clases son a medida, totalmente personalizadas dependiendo de las necesidades de
+                                    cada persona. Se adaptan según la edad y el conocimiento que cada uno quiera
+                                    adquirir.
+                              </p>
+                              <p>Tipos de Clases:</p>
+                        </div>
+                        <div class="particulares">
+                              <p>Compu KIDS</p>
+                              <p>Compu TEENS</p>
+                              <p>Primer Empleo</p>
+                              <p>Adultos Mayores</p>
+                        </div>
+                  </div>
+                  <!-- Tarjeta de Diseño Web -->
+                  <div class="card">
+                        <!-- Acá se insertan la imagen de la card-->
+                        <div class="imagen-container"><img class="imagenes" src="/assets/img/web.jpg" alt=""></div>
+                        <div class="content">
+                              <h2>Diseño Web</h2>
+                              <!-- Detalles del servicio de Diseño Web -->
+                              <p>Soy Analista de Sistemas desde el año 2013</p>
+                              <p>Por el momento estoy estudiando FrontEnd, Diseño Web y BackEnd en la carrera de
+                                    Desarrollo de Software.</p>
+                              <p>En esta sección voy a ir subiendo mi portfolio de sitios diseñados.</p>
+                              <p>Si es de su interés ver mis proyectos, l@ invito a conocer mis repositorios de <span><a href="https://github.com/duarteale">
+                                    <i class="fab fa-github">Github</i>
+                              </a></span> </p>                              
+                        </div>
+                  </div>
+            </div>
+            <h3>Contacto</h3>
+            <!-- En esta sección "Contacto" es donde creo un formulario de contacto -->
+            <div class="contacto row">
+                  <div class="col-md-6" id="contacto">
+                        <form id="contactForm" method="post">
+                              <!-- Formulario de contacto -->
+                              <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre:</label>
+                                    <input type="text" class="form-control" name="nombre" id="nombre" required />
+                              </div>
+                              <div class="mb-3">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="email" class="form-control" name="email" id="email" required />
+                              </div>
+                              <div class="mb-3">
+                                    <label for="telefono" class="form-label">Telefono:</label>
+                                    <input type="tel" class="form-control" name="telefono" id="telefono" />
+                              </div>
+                              <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Mensaje:</label>
+                                    <textarea class="form-control" name="mensaje" id="mensaje" rows="3"
+                                          required></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                  </div>
+                  <div id="contacto" class=" col-md-6">
+                        <!-- Información de contacto -->
+                        <h4>Información de contacto</h4>
+                        <ul>
+                              <li>
+                                    <i class="fab fa-whatsapp"></i> Whatsapp: (02314) 15442576
+                              </li>
+                              <li>
+                                    <i class="fas fa-envelope"></i> Email: almavirtualbolivar@gmail.com
+                              </li>
+                              <li>
+                                    <i class="fas fa-map-marker-alt"></i> Ubicación: San Carlos de Bolivar, Bs. As.,
+                                    Argentina
+                              </li>
+                        </ul>
+                        <!-- Mapa de ubicación -->
+                        <div class="map">
+                              <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.620236845453!2d-61.09921468468848!3d-36.228276773268525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc94e48074d66f%3A0xbdfc59185c091ee!2sSan%20Carlos%20de%20Bol%C3%ADvar%2C%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1sen!2sus!4v1636894423461!5m2!1sen!2sus"
+                                    width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                              </iframe>
+                        </div>
+                  </div>
+            </div>
+      </main>
+      <footer class="footer">
+            <div class="container">
+                  <div class="row">
+                        <!-- Enlaces de navegación del footer -->
+                        <div class="col-md-4">
+                              <h5>Clases de Computación</h5>
+                              <ul>
+                                    <li><a href="#compu-kids">Compu KIDS</a></li>
+                                    <li><a href="#compu-teens">Compu TEENS</a></li>
+                                    <li><a href="#primer-empleo">Primer Empleo</a></li>
+                                    <li><a href="#adultos-mayores">Adultos Mayores</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-4">
+                              <h5>Asistencia Virtual</h5>
+                              <ul>
+                                    <li><a href="#administracion-email">Administración</a></li>
+                                    <li><a href="#agenda">Documentos</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-4">
+                              <h5>Diseño Web</h5>
+                              <ul>
+                                    <li class="disabled"><a href="#proyectos">Proyectos Realizados</a></li>
+                                    <li class="disabled"><a href="#portafolio">Portafolio</a></li>
+                              </ul>
+                        </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                        <!-- Derechos de autor y redes sociales -->
+                        <div class="col-md-10">
+                              <p>&copy; 2023 Alma Virtual - Todos los derechos reservados</p>
+                        </div>
+                        <div class="col-md-2 text-end">
+                              <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                          <a href="https://www.instagram.com/almavirtualbolivar">
+                                                <i class="fab fa-instagram"></i>
+                                          </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                          <a href="https://www.linkedin.com/in/duarteale">
+                                                <i class="fab fa-linkedin"></i>
+                                          </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                          <a href="https://github.com/duarteale">
+                                                <i class="fab fa-github"></i>
+                                          </a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+      <!-- Incluyendo scripts al final para mejorar el rendimiento -->
+      <script src="/assets/js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

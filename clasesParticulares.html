@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="/assets/css/styles.css">
+      <title>Alma Virtual</title>
+</head>
+
+<body>
+      <header>
+            <!-- En esta sección se encuentra el navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+                  <!-- Parte izquierda del navbar -->
+                  <div class="container-fluid col-5">
+                        <a id="logo" class="navbar-brand" href="index.html">
+                              <!-- Logo -->
+                              <img id="logo" src="/assets/img/logo.png" alt="Logo" width="40" height="40"
+                                    class="d-inline-block align-text-top">
+                              <span>AlmaVirtual</span>
+                        </a>
+                        <!-- Botón del navbar para móviles -->
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#navbarSupportedContent">
+                              <span class="navbar-toggler-icon"></span>
+                        </button>
+                  </div>
+                  <!-- Parte derecha del navbar -->
+                  <div class="container-fluid col-7">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <!-- Opciones de navegación -->
+                                    <li class="nav-item">
+                                          <a class="nav-link active " aria-current="page" href="#presentacion">Soy
+                                                Ale</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                          <!-- Menú desplegable de servicios -->
+                                          <a class="nav-link dropdown-toggle" href="#servicios" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Servicios
+                                          </a>
+                                          <ul class="dropdown-menu">
+                                                <!-- Lista de servicios -->
+                                                <li><a class="dropdown-item"
+                                                      href="#">Asistencia Virtual</a>
+                                                </li>  
+                                                <li>
+                                                      <hr class="dropdown-divider">
+                                                </li>
+                                                <!-- Tipos de clases particulares -->                                                
+                                                <li><a class="dropdown-item"
+                                                            href="clasesParticulares.html#adultos">Clases Particulares</a>
+                                                </li>                                                
+                                                <li>
+                                                      <hr class="dropdown-divider">
+                                                </li>
+                                                <li>Diseño Web</li>
+                                          </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                          <a class="nav-link" href="#contacto">Contacto</a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+            </nav>
+      </header>
+
+      <main>
+            <div id="presentacion">
+                  <div class="element">
+                        <h1>Hola!</h1>
+                  </div>
+                  <h2>Soy Ale Duarte</h2>
+                  <h3>Analista de Sistemas y estudiante de Desarrollo de Software</h3>
+            </div>
+            <h3>Clases de Computación</h3>
+            <div id="servicios" class="tarjetas">
+                  <div class="card">
+                        <div id="teens" class="content">
+                              <h2>Compu TEENS</h2>
+                              <img class="imagenes" src="/assets/img/compuTeens.png" alt="Computacion para adolescentes">
+                              <p>12 a 17 años</p>
+                              <p>Se enseña el uso responsable de Internet como principal foco</p>
+                              <p>Herramientas de estudio</p>
+                              <p>Compras online seguras</p>
+                              <p>¿Qué es CIBERBULLYING? ¿Cómo nos cuidamos del GROOMING?</p>
+                              <p>Seguridad y navegación segura. Antivirus. Tipos de virus y como protegernos</p>
+                              <p>Microsoft Office. Libre Office. Aprendemos a utilizar Word, Excel, PowerPoint</p>
+                              <p>Manejo correcto de las Inteligencias Artificiales</p>
+                        </div>                        
+                  </div>
+                  <div class="card">
+                        <div id="adultos" class="content">
+                              <h2>Adultos Mayores</h2>
+                              <img class="imagenes" src="/assets/img/adultosMayores.png" alt="Computacion para adultos mayores">
+                              <p>+60 años</p>
+                              <p>Manejo de Redes Sociales. Videollamadas. (Skype, Meet, Zoom, etc.)</p>
+                              <p>Aprender a utilizar computadora tanto de escritorio como portátil</p>
+                              <p>También la utilización de: Celulares, Smart TV, Tablets, etc.</p>
+                              <p>Te enseño a utilizar la impresora: Imprimir, escanear, fotocopiar, ajustar hojas, instalación de cartuchos, etc.</p>
+                        </div>                        
+                  </div>
+                  <div class="card">
+                        <div id="kids" class="content">
+                              <h2>Compu KIDS</h2>
+                              <img class="imagenes" src="/assets/img/KIDS.png" alt="Computacion para adultos mayores">
+                              <p>Se enseña el uso responsable de Internet como principal foco</p>
+                              <p>¿Qué es CIBERBULLYING? ¿Cómo nos cuidamos del GROOMING?</p>
+                              <p>Utilización de impresora, multifunción, y demás hardware</p>
+                              <p>Seguridad de dispositivos</p>
+                              <p>Aprendemos jugando</p>
+                              <p>Horas de pantalla restringidas y sus motivos</p>
+                              <p>Office básico</p>
+                        </div>                        
+                  </div>
+            </div>
+      </main>
+      <footer class="footer">
+            <div class="container">
+                  <div class="row">
+                        <!-- Enlaces de navegación del footer -->
+                        <div class="col-md-4">
+                              <h5>Clases de Computación</h5>
+                              <ul>
+                                    <li><a href="#compu-kids">Compu KIDS</a></li>
+                                    <li><a href="#compu-teens">Compu TEENS</a></li>
+                                    <li><a href="#primer-empleo">Primer Empleo</a></li>
+                                    <li><a href="#adultos-mayores">Adultos Mayores</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-4">
+                              <h5>Asistencia Virtual</h5>
+                              <ul>
+                                    <li><a href="#administracion-email">Administración</a></li>
+                                    <li><a href="#agenda">Documentos</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-md-4">
+                              <h5>Diseño Web</h5>
+                              <ul>
+                                    <li class="disabled"><a href="#proyectos">Proyectos Realizados</a></li>
+                                    <li class="disabled"><a href="#portafolio">Portafolio</a></li>
+                              </ul>
+                        </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                        <!-- Derechos de autor y redes sociales -->
+                        <div class="col-md-10">
+                              <p>&copy; 2023 Alma Virtual - Todos los derechos reservados</p>
+                        </div>
+                        <div class="col-md-2 text-end">
+                              <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                          <a href="https://www.instagram.com/almavirtualbolivar">
+                                                <i class="fab fa-instagram"></i>
+                                          </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                          <a href="https://www.linkedin.com/in/duarteale">
+                                                <i class="fab fa-linkedin"></i>
+                                          </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                          <a href="https://github.com/duarteale">
+                                                <i class="fab fa-github"></i>
+                                          </a>
+                                    </li>
+                              </ul>
+                        </div>
+                  </div>
+            </div>
+      </footer>
+      <script src="/assets/js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
