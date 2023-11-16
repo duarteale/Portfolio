@@ -17,23 +17,7 @@ Este es el repositorio de mi proyecto de Portfolio, diseñado para mostrar mis s
 ## Estructura del Proyecto
 
 El proyecto está organizado de la siguiente manera:
-Portfolio/
-|- assets/
-| |-- css/
-| | |-- reset.css
-| | |-- styles.css
-| |-- img/
-| | |-- logo.png
-| | |-- web.jpg
-| | |-- KIDS.png
-| | |-- compuTEENS.png
-| | |-- adultosMayores.png
-| |-- js/
-| | |-- main.js
-|-- documentaciones/
-| |-- sketch.pdf
-|- clasesParticulares.html
-|- index.html
+<img src="./assets/img/estructura.PNG" alt="Estructura" width="50" height="300">
 
 ## Descripción
 
