@@ -78,6 +78,49 @@ ul.dropdown-menu li {
 
 /*-------------- Configuro los media queries para hacer el sitio responsive --------------*/
 @media screen and (max-width: 768px) {
+      .navbar-brand {
+            margin-right: auto; /* Mueve el logo hacia la izquierda */            
+      }
+      .menu-toggle {
+            position: relative;
+      }
+      .navbar .container-fluid {            
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center; /* Alinea los elementos verticalmente */
+      }
+      .navbar-brand,
+      .navbar-toggler {
+            display: flex;            
+            align-items: center;
+      }
+      .menu-icon {
+            cursor: pointer;
+      }
+      .menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #f1f1f1;
+            padding: 10px;
+            list-style: none;
+      }
+      .menu li {
+            margin-bottom: 10px;
+      }
+      #menu-btn:checked ~ .menu {
+            display: block;
+      }
+      #botonModo{
+            align-items: end;
+      }      
+      #menuNav{
+            flex: 10;
+      }     
+      #menuModo{
+            flex: 2;
+      }
       h1{
             font-size: 35px;
       }
@@ -105,7 +148,7 @@ ul.dropdown-menu li {
             margin-bottom: 10px;
       }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {      
       .card {
             display: flex;  /*------ Display flexible en la tarjeta*/
             justify-content: space-between; 
