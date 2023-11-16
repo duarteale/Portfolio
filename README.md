@@ -1,7 +1,7 @@
 # Portfolio de Alejandra Duarte
 
 Este es el repositorio de mi proyecto de Portfolio, diseñado para mostrar mis servicios y habilidades en asistencia virtual, clases de computación y diseño web, realizado en el curso de BA Multiplica 2.0 desde el 12 de Septiembre 2023 al 23 de Noviembre 2023.
-[Prototipo:]( https://www.figma.com/file/nCAVYwuiSiMVAIy7Hc6UCp/Mi-primer-sitio-BAM?type=design&node-id=0%3A1&mode=design&t=epfeVNY9xUptP7RV-1)
+[Prototipo inicial en FIGMA]( https://www.figma.com/file/nCAVYwuiSiMVAIy7Hc6UCp/Mi-primer-sitio-BAM?type=design&node-id=0%3A1&mode=design&t=epfeVNY9xUptP7RV-1)
 
 
 
