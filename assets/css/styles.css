@@ -24,7 +24,8 @@ h1{
 h2{
       font-size: 35px; /*------ Tamaño del texto del título*/
       text-align: center; /*------ Texto alineado al medio/centro*/
-      margin: 5px;
+      margin: 5px; /*------ Todos los margenes del titulo de 5px*/
+      line-height: normal;  /*------ Interlineado de titulo*/
 }
 h3{
       font-size: 25px; /*------ Tamaño del texto del título*/
@@ -32,10 +33,12 @@ h3{
       color: whitesmoke; /*------ Color de texto del titulo h3*/
       padding: 15px; /*------ Relleno del titulo de 15px*/
       margin: 5px;
+      line-height: normal;  /*------ Interlineado de titulo*/
 }
 h5{
       font-size: 22px; /*------ Tamaño del texto del título*/
       text-align: center; /*------ Texto alineado al medio/centro*/
+      line-height: normal;  /*------ Interlineado de titulo*/
 }
 p{
       font-size: 14px ;
