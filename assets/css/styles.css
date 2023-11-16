@@ -103,6 +103,9 @@ ul.dropdown-menu li {
       #menuModo{
             flex: 2;
       }
+      #presentacion{
+            height: 350px;
+      }
       h1{
             font-size: 35px;
       }
