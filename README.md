@@ -17,7 +17,7 @@ Este es el repositorio de mi proyecto de Portfolio, diseñado para mostrar mis s
 ## Estructura del Proyecto
 
 El proyecto está organizado de la siguiente manera:
-<img src="./assets/img/estructura.PNG" alt="Estructura" width="50" height="300">
+- <img src="./assets/img/estructura.PNG" alt="Estructura" width="250" height="700">
 
 ## Descripción
 
