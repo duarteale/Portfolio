@@ -15,62 +15,43 @@
 <body>
       <header>
             <!-- En esta sección se encuentra el navbar -->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
-                  <!-- Parte izquierda del navbar -->
-                  <div id="menuNav" class="container-fluid col-5">
-                        <a id="logo" class="navbar-brand" href="index.html">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+                  <div class="container-fluid">
+                        <a id="logo" class="navbar-brand me-5" href="index.html">
                               <!-- Logo -->
                               <img id="logo" src="./assets/img/logo.png" alt="Logo" width="40" height="40"
                                     class="d-inline-block align-text-top">
                               <span>AlmaVirtual</span>
                         </a>
-                        <!-- Botón del navbar para móviles -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#navbarSupportedContent">
+                        <!-- Agrega el botón de cambio de modo oscuro -->
+                        <div class="form-check form-switch me-5">
+                              <input class="form-check-input" type="checkbox" id="modoSwitch">
+                              <label class="form-check-label" for="modoSwitch">
+                              </label>
+                        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                         </button>
-                  </div>
-                  <!-- Parte derecha del navbar -->
-                  <div id="menuModo" class="container-fluid col-7">
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <!-- Opciones de navegación -->
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                              <ul class="navbar-nav">
                                     <li class="nav-item">
-                                          <a class="nav-link active " aria-current="page" href="#presentacion">Soy
-                                                Ale</a>
+                                    <a class="nav-link" href="#presentacion">Soy Ale</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                          <!-- Menú desplegable de servicios -->
-                                          <a class="nav-link dropdown-toggle" href="#servicios" role="button"
-                                                data-bs-toggle="dropdown" aria-expanded="false">
-                                                Servicios
+                                    <li class="nav-item dropdown"> <!-- Añade la clase 'dropdown' al elemento 'Servicios' -->
+                                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          Servicios
                                           </a>
-                                          <ul class="dropdown-menu">
-                                                <!-- Lista de servicios -->
-                                                <li><a class="dropdown-item"
-                                                      href="#">Asistencia Virtual</a>
-                                                </li>  
-                                                <li>
-                                                      <hr class="dropdown-divider">
-                                                </li>
-                                                <!-- Tipos de clases particulares -->                                                
-                                                <li><a class="dropdown-item"
-                                                            href="clasesParticulares.html#adultos">Clases Particulares</a>
-                                                </li>                                                
-                                                <li>
-                                                      <hr class="dropdown-divider">
-                                                </li>
-                                                <li><a class="dropdown-item"
-                                                      href="#">Diseño Web</a>
-                                                </li>  
+                                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Asistencia Virtual</a></li>
+                                                <li><a class="dropdown-item" href="clasesParticulares.html#adultos">Clases Particulares</a></li>
+                                                <li><a class="dropdown-item" href="#">Diseño Web</a></li>
                                           </ul>
                                     </li>
-                                    <li class="nav-item ">
-                                          <a class="nav-link" href="#contacto">Contacto</a>
+                                    <li class="nav-item">
+                                    <a class="nav-link" href="#contacto">Contacto</a>
                                     </li>
-                              </ul>
+                              </ul>                  
                         </div>
-                        <button id="botonModo" class="btn btn-light">Noche</button>
                   </div>
             </nav>
       </header>
