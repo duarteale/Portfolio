@@ -138,6 +138,8 @@ form{
             margin-bottom: 5px; /*------ Aplica un margen inferior entre los titulos hs y los parrafos con otros elementos*/
       }
       .card img {
+            max-width: 100%;
+            height: auto;
             display: flex; /*------ Display flexible en la imagen de la tarjeta*/
             flex-wrap: wrap;  /*------ Mantiene todo en la misma fila*/
             justify-content: center;  /*------ Ajusta el contenido al centro/medio*/
@@ -223,7 +225,8 @@ footer{
       color: rgb(212, 154, 233); /*------ Color del texto del footer*/
       padding: 10px;  /*------ Relleno del footer de 10px*/
 }
-footer p{
+footer p, a{
       line-height: normal; /*------ Interlineado entre parrafos del footer*/
+      color:white;
       text-align: center; /*------ Alinea los parrafos del footer al medio*/
 }
