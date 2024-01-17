@@ -47,7 +47,7 @@ h5{
       line-height: normal;  /*------ Interlineado de titulo*/
 }
 p{
-      font-size: 14px ;
+      font-size: 18px ;
       color: rgb(212, 154, 233); /*------ Color de texto de todos los parrafos del body*/
 }
 label{font-size: 12px ;
@@ -68,7 +68,15 @@ form{
       background-color: rgb(32, 2, 97);  /*------ Color de fondo del boton primary en todo el sitio.*/
 }
 
-
+li{
+      font-size: 15px;
+      line-height: 30px;
+      list-style: none;
+      text-align: left;
+}
+li i{
+      font-size: 18px;
+}
 
 #presentacion{
       background-color:rgba(49, 48, 48, 0.4);
@@ -103,17 +111,6 @@ form{
       h4{
             font-size: 20px;  /*------ Tamaño de texto del titulo*/
       }
-      .tarjetas {
-            flex-direction: column; 
-            align-items: center;  /*------ Alinea los elementos a lo largo del eje transversal a las tarjetas dentro de la media querie de celulares*/
-      }    
-      .card {
-            width: 80%;  /*------ Tamaño de altura de la tarjeta en querie de celulares*/
-            margin: 20px auto; /*------ Margenes automaticos de 20px de la tarjeta en querie de celulares*/
-      }
-      .card img {
-            display: none;  /*------ En la querie de celulares, la imagen no se muestra. Solamente se muestra en pantallas pasando los 768px*/
-      }
       #redeSociales{
             margin-bottom: 15px;  /*------ Margen inferior de 15 px para el ID de redes sociales del footer*/
       }
@@ -121,75 +118,92 @@ form{
             margin-bottom: 10px;  /*------ Margen inferior de 15 px para los parrafos del footer*/
       }
 }
-/* Estilos para pantallas con ancho mínimo de 768px, al girar el celular se ven las imágenes de las tarjetas */
-@media screen and (min-width: 768px) {      
-      .card {
-            display: flex;  /*------ Display flexible en la tarjeta*/
-            justify-content: space-between;  /*------ Agrega espacios*/
-            align-items: center;  //*------ Alinea los elementos a lo largo del eje transversal a las tarjetas dentro de la media querie de escritorio*/
-            padding: 20px; /*------Relleno de la tarjeta de 20px*/
-      }
-      .card .content {
-            flex: 1;  /*------ Aplica flex-grow: 1, flex-shrink: 1, flex-basis: 0%; */
-            text-align: left;  /*------ Texto de la tarjeta alineado a la izquierda*/
-      }
-      .card .content h2,
-      .card .content p {
-            margin-bottom: 5px; /*------ Aplica un margen inferior entre los titulos hs y los parrafos con otros elementos*/
-      }
-      .card img {
-            max-width: 100%;
-            height: auto;
-            display: flex; /*------ Display flexible en la imagen de la tarjeta*/
-            flex-wrap: wrap;  /*------ Mantiene todo en la misma fila*/
-            justify-content: center;  /*------ Ajusta el contenido al centro/medio*/
-            border-radius: 10px;  /*------ Borde redondeado a la imagen de 10px*/
-      }
-}
+
 /*-------------- Animación de "Hola"--------------*/
 @keyframes miAnimacion {
       0%{ transform: scale(1);} /*------ Establece el elemento en su estado inicial, con un tamaño de escala normal */
       50%{ transform: scale(1.2);} /*------ La escala se agranda al 50% de la transicion*/
       100%{ transform: scale(1);} /*------ La escala vuelve a su tamaño al 100% de la transicion*/
 }
-/*-------------- Configuracion de las cards/tarjetas --------------*/
-.tarjetas{
-      display: flex; /*------ Display flexible*/
-}
-.card{
-      background-color:rgba(124, 124, 124, 0.4); /*------ Color de fondo de la tarjeta*/
-      color: rgb(58, 7, 109);  /*------Color del texto de la tarjeta*/
-      padding: 30px; /*------ Relleno de la tarjeta de 30px*/
-      flex: 50%;
-      flex-direction: column;
-      text-align: center; /*------ Texto alineado al medio/centro en las cards*/
-      align-items: center; /*------- Alinea los elementos  a lo largo del eje transversal */
-      margin: 20px;  /*------ Todos los margenes de la tarjeta son de 20px*/
-      border: 3px solid whitesmoke;  /*------ Agrega un borde de color solido de 3px*/
-      border-radius: 20px;  /*------ Borde redondeado de 20px a la tarjeta*/
-      display: flex; /*------ Display flexible en la tarjeta*/      
-      overflow: hidden;
-      line-height: 20px; /*------ Interlineado del texto de las tarjetas*/
-}
-.particulares{
-      text-align: center; /*------ Texto alineado al medio/centro en el sector particulares*/
-      color: rgb(42, 3, 73);
+/*--------------------- Servicios ---------------------*/
+.services .icon-box {
+      border-radius: 20px;
+      text-align: center;
+      align-items: center;
+      background: rgba(204, 204, 204, 0.1);
+      padding: 60px 20px;
+      transition: all ease-in-out 0.3s;
 }
 
-/*---------------- Configuracion de imagenes----------------*/
-.imagen-container {      
-      position: relative;
-      overflow: hidden;
+.services .icon-box .icon {
+      margin: 0 auto;
+      width: 64px;
+      height: 64px;
+      background: #5c0869;
+      border-radius: 5px;
+      transition: all 0.3s ease-out 0s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      transform-style: preserve-3d;
 }
-/*Hago una pequeña animacion para el hover*/
-.imagenes{
-      display: block;
-      max-width: 100%; 
-      height: 300px; 
-      transition: transform 0.1s ease-in-out; 
+
+.services .icon-box .icon i {
+      margin: 5px;
+      color: #fff;
+      font-size: 30px;
 }
-.imagenes:hover {
-      transform: scale(1.1); 
+
+.services .icon-box .icon::before {
+      position: absolute;
+      content: "";
+      left: -8px;
+      top: -8px;
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 5px;
+      transition: all 0.3s ease-out 0s;
+      transform: translateZ(-1px);
+}
+
+.services .icon-box h4 {
+      font-weight: 700;
+      margin-bottom: 15px;
+      font-size: 24px;
+}
+
+.services .icon-box h4 a {
+      color: #fff;
+}
+
+.services .icon-box p {
+      line-height: 30px;
+      font-size: 14px;
+      margin-bottom: 0;
+}
+
+.services .icon-box:hover {
+      background: #5c0869;
+      border-color: #5c0869;
+}
+
+.services .icon-box:hover .icon {
+      background: #fff;
+}
+
+.services .icon-box:hover .icon i {
+      color: #5c0869;
+}
+
+.services .icon-box:hover .icon::before {
+      background: #694a6d;
+}
+
+.services .icon-box:hover h4 a,
+.services .icon-box:hover p {
+      color: #fff;
 }
 
 /*---------------- Configuracion de contacto ----------------*/
