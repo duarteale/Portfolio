@@ -236,17 +236,21 @@
                               <button type="submit" class="btn btn-primary">Enviar</button>
                         </form>
                   </div>
-                  <div id="contacto" class=" col-md-6">
+                  <div id="contacto" class=" col-md-6 mb-0">
                         <h4>Información de contacto</h4>
                         <ul>
+                              <i class="fab fa-whatsapp"></i>
                               <p>
-                                    <i class="fab fa-whatsapp"></i> Whatsapp: (02314) 15442576
+                                    Whatsapp: (02314) 15442576
                               </p>
+                              <i class="fas fa-envelope"></i> 
                               <p>
-                                    <i class="fas fa-envelope"></i> Email: almavirtualbolivar@gmail.com
+                                    Email: <span id="emailText">almavirtualbolivar@gmail.com</span>
+                                    <button class="btn btn-primary" id="copiarTextoBtn" onclick="copiarTexto()">Copiar texto</button>
                               </p>
-                              <p>
-                                    <i class="fas fa-map-marker-alt"></i> Ubicación: San Carlos de Bolivar, Bs. As.,
+                              
+                              <i class="fas fa-map-marker-alt"></i><p>
+                                    Ubicación: San Carlos de Bolivar, Bs. As.,
                                     Argentina
                               </p>
                         </ul>

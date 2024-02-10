@@ -9,8 +9,35 @@ function cambiarModo() {
             body.classList.remove("modo-oscuro");
       }
 }
+
+function copiarTexto() {
+      // Obtener el elemento span que contiene el email
+      const emailElement = document.getElementById('emailText');    
+      // Verificar si el botón ya ha sido clicado
+      if (emailElement && !emailElement.dataset.copiado) {
+          // Crear un área de texto temporal
+            const textarea = document.createElement('textarea');
+            textarea.value = emailElement.textContent;        
+            document.body.appendChild(textarea);  
+      
+            // Seleccionar el texto en el área de texto
+            textarea.select();
+            textarea.setSelectionRange(0, 99999); /* Para dispositivos móviles */  
+      
+            // Copiar el texto al portapapeles
+            document.execCommand('copy');  
+      
+            document.body.removeChild(textarea);  
+      
+            alert('Texto copiado al portapapeles: ' + emailElement.textContent);
+      
+            emailElement.dataset.copiado = true;
+      }
+}
+
 // Agregar evento al cambio del switch para activar el modo oscuro
 modoSwitch.addEventListener('change', cambiarModo);
+document.getElementById('copiarTextoBtn').addEventListener('click', copiarTexto);
 //---------------- Fin Modo oscuro/claro ------------------
 
 
